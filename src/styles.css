@@ -134,7 +134,7 @@ aside.menu-sidebar.d-none.d-lg-block.clr{
  */
 
 .header-desktop{
-    background:#0da8e4;
+    background:#b6022f;
     -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
@@ -250,11 +250,11 @@ input.au-input.au-input-xl{
 }
 
 .total{
-    background:#205b8d;
+    background:#9b0228;
     line-height:43px;
     color:#fff;
     border-radius:30px;
-    border:1px solid #0da8e4;
+    border:1px solid #a3a3a3;
     float:left;
     margin-top:7px;
     padding-left:17px
@@ -283,15 +283,15 @@ input.au-input.au-input-xl{
     right:0;
     min-width:95px;
     color:#fff;
-    border:1px solid #205b8d;
+    border:1px solid #9b0228;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:43px;
-    background:#205b8d
+    background:#420212
 }
 
 .au-btn-submit:hover{
-    background:#05143f
+    background:#660b21
 }
 
 .au-btn-submit>i{
@@ -481,7 +481,7 @@ input.au-input.au-input-xl{
     line-height:inherit
 }
 .header-mobile .navbar-mobile .navbar-mobile-list li a:hover{
-    color:#0da8e4
+    color:#6d041e
 }
 .header-mobile .navbar-mobile .navbar-mobile-list li a>i{
     margin-right:19px
@@ -690,7 +690,7 @@ table.table.table-bordered{
     border:1px solid #dee2e6
 }
 table.table.table-bordered th{
-    BACKGROUND:#0da8e4;
+    BACKGROUND:#9b0228;
     color:#fff;
     font-size:14px;
     padding:7px
@@ -717,7 +717,7 @@ table.table.table-bordered th{
  .price{
     margin:15px 0 0;
     font-weight:800;
-    color:#0da8e4
+    color:#9b0228
 }
 .detail-section{
     margin-top:60px
@@ -732,8 +732,8 @@ table.table.table-bordered th{
 
  .btn-info{
     color:#fff;
-    background-color:#0da8e4!important;
-    border-color:#0da8e4!important
+    background-color:#9b0228!important;
+    border-color:#9b0228!important
 }
 a.primary-btn{
     background:#05143f;
@@ -746,7 +746,7 @@ a.primary-btn{
     margin-top:5px
 }
 a.primary-btn:hover{
-    background:#0da8e4;
+    background:#bd6077;
     color:#fff
 }
 
@@ -967,7 +967,7 @@ footer ul li{
         font-size:22px;
         float:left;
         margin-top:16px;
-        color:#205b8d;
+        color:#9b0228;
         margin-left:15px
     }
     .footer-pagination{
@@ -986,11 +986,11 @@ footer ul li{
         right:10px;
         min-width:85px;
         color:#fff;
-        border:1px solid #205b8d;
+        border:1px solid #9b0228;
         -webkit-border-radius:3px;
         -moz-border-radius:3px;
         border-radius:0;
-        background:#205b8d
+        background:#9b0228
     }
     input.au-input.au-input-xl{
         border-radius:0!important;
@@ -1019,11 +1019,11 @@ footer ul li{
         margin-left:6px
     }
     .total{
-        background:#205b8d;
+        background:#9b0228;
         line-height:30px;
         color:#fff;
         border-radius:30px;
-        border:1px solid #205b8d;
+        border:1px solid #9b0228;
         float:left;
         margin-top:9px;
         padding-left:12px
