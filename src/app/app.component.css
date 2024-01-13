@@ -1,0 +1,14 @@
+/* This is an example stylesheet that targets various elements from your HTML */
+.navbar-list a {
+    color: #800020; /* Sets the color of sidebar links to a classy burgundy red */
+  }
+  
+  .header-desktop {
+    background-color: #800020; /* Sets the header background color to a classy burgundy red */
+  }
+  
+  .au-btn-submit {
+    background-color: #800020; /* Sets the button background color to a classy burgundy red */
+    color: #ffffff; /* Keeps the text color of the button to white for better contrast */
+  }
+  
