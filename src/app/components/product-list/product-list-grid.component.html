@@ -14,6 +14,16 @@
             <a href="#" class="primary-btn">Add to cart</a>
           </div>
         </div>
+
+        <!-- daca nu mai avem produse vom  afisa un mesaj-->
+
+        <div
+          *ngIf="products?.length == 0"
+          class="alert alert-warning col-md-12"
+          role="alert"
+        >
+          No products found.
+        </div>
       </div>
     </div>
   </div>
