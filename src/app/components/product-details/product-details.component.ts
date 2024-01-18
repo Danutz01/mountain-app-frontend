@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { throttle } from 'rxjs';
+import { Product } from 'src/app/common/product';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-product-details',
@@ -7,9 +11,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() { }
+  product!: Product;
+  constructor(private productService: ProductService,
+              private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe(() => {
+      this.handleProductDetails();
+    })
+  }
+
+  handleProductDetails(){
+    //throw new Error("Method not implemented.");
+
+    //get the id parameter stirng and convert it to a number using "+" symbol
+
+    const theProductId: number = +this.route.snapshot.paramMap.get('id')!;
+
+    this.productService.getProduct(theProductId).subscribe(
+      data => {
+        this.product = data;
+      }
+    )
   }
 
 }
