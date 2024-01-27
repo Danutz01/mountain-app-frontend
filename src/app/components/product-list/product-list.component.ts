@@ -56,6 +56,7 @@ export class ProductListComponent implements OnInit {
 
     //Check if we have different category than previous
     //Note: Angular will reuse a component if it is currently being viewed
+
     //If we have a different categ id than previous
     //than set thePageNumber to 1
 
@@ -94,4 +95,9 @@ export class ProductListComponent implements OnInit {
     //cautam produsele folosind keyword-ul
   }
 
+  updatePageSize(pageSize: string){
+    this.thePageSize = +pageSize;
+    this.thePageNumber = 1;
+    this.listProducts();
+  }
 }
