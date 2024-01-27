@@ -18,7 +18,12 @@
               {{ tempProduct.unitPrice | currency : "RON" }}
             </div>
 
-            <a href="#" class="primary-btn">Add to cart</a>
+            <button
+              (click)="addToCart(tempProduct)"
+              class="btn btn-primary btn-sm"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
 
