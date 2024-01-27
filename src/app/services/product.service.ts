@@ -32,6 +32,16 @@ export class ProductService {
       return this.getProducts(searchUrl);
     }
 
+    getProductListPaginate(thePage: number, thePageSize: number, theCategoryId: number): Observable<GetResponseProducts> {
+
+      //need to build URL based on category id, page, size
+      const searchUrl = `${this.baseUrl}/search/findByCategoryId?id=${theCategoryId}`
+                        + `
+                        &page=${thePage}&size=${thePageSize}`;
+      
+      return this.httpClient.get<GetResponseProducts>(searchUrl);
+    }
+
     //calling REST API
     //Maps the JSON data from Spring Data REST to productCategory array
     getProductCategories(): Observable<ProductCategory[]> {
@@ -54,6 +64,12 @@ export class ProductService {
 interface GetResponseProducts{
   _embedded: {
     products: Product[];
+  }
+  page:{
+    size: number,   //size of this page
+    totalElements: number,  //grand total of ALL elements in the db. But we re not returning all elements, just the count for informational purposes 
+    totalPages: number,  //total pages available
+    number: number  //current page number
   }
 }
 
